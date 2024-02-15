@@ -122,8 +122,6 @@
     };
 };
 
-#line 21 "/Users/alonhearter/personal/miryoku_zmk/miryoku/
-
 miryoku_shift_functions.dtsi {
     "
 /
@@ -278,8 +276,6 @@ miryoku_shift_functions.dtsi {
     };
 };
 
-#line 19 "/Users/alonhearter/personal/miryoku_zmk/miryoku/
-
 miryoku_double_tap_guard.dtsi {
     "
 /
@@ -415,8 +411,6 @@ miryoku_double_tap_guard.dtsi {
     };
 };
 
-#line 4 "/Users/alonhearter/personal/miryoku_zmk/miryoku/
-
 miryoku_mousekeys.dtsi {
     "
 /
@@ -463,8 +457,6 @@ miryoku_mousekeys.dtsi {
         };
     };
 };
-
-#line 4 "/Users/alonhearter/personal/miryoku_zmk/miryoku/
 
 miryoku_behaviors.dtsi {
     "
