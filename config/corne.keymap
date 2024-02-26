@@ -13,7 +13,7 @@
         BASE {
             label = "Base";
             bindings = <
-&kp RA(RC(RG(S)))  &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O           &kp P           &kp RG(RA(RC(T)))
+&tmux_session      &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O           &kp P           &kp RG(RA(RC(T)))
 &kp CAPS           &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G          &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &kp LG(SPACE)
 &kp RG(BACKSLASH)  &u_lt 4 Z     &u_mt RALT X  &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH   &tog 1
                                                &u_lt 7 ESC    &u_lt 5 SPACE  &u_lt 6 TAB    &u_lt 9 RET  &u_lt 8 BSPC   &u_lt 10 DEL
@@ -439,12 +439,11 @@
             bindings = <&kp KP_ASTERISK &kp KP_N5>;
         };
 
-        tmux_sesh: tmux_sesh {
+        tmux_session: tmux_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp T>;
-            label = "TMUX_SESH";
-            wait-ms = <0>;
+            bindings = <&kp LA(T) &kp GRAVE &kp T>;
+            label = "TMUX_SESSION";
         };
     };
 };
