@@ -442,9 +442,9 @@
         tmux_session: tmux_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(T)>, <&macro_wait_time 200>, <&kp GRAVE &kp T>;
-
+            bindings = <&kp LA(T) &kp GRAVE &kp T>;
             label = "TMUX_SESSION";
+            wait-ms = <500>;
         };
     };
 };
