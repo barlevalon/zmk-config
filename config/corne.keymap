@@ -444,7 +444,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(T) &kp GRAVE &kp T>;
             label = "TMUX_SESSION";
-            wait-ms = <500>;
+            wait-ms = <200>;
         };
     };
 };
