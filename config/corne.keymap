@@ -15,8 +15,8 @@
             bindings = <
 &tmux_session      &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O           &kp P           &kp RG(RA(RC(T)))
 &kp CAPS           &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G          &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &kp LG(SPACE)
-&kp RG(BACKSLASH)  &u_lt 4 Z     &u_mt RALT X  &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH   &tog 1
-                                               &u_lt 7 ESC    &u_lt 5 SPACE  &u_lt 6 TAB    &u_lt 9 RET  &u_lt 8 BSPC   &u_lt 10 DEL
+&kp RG(BACKSLASH)  &u_lt 3 Z     &u_mt RALT X  &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 3 SLASH   &tog 1
+                                               &u_lt 6 ESC    &u_lt 4 SPACE  &u_lt 5 TAB    &u_lt 8 RET  &u_lt 7 BSPC   &u_lt 9 DEL
             >;
         };
 
@@ -26,24 +26,14 @@
 &kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &none
 &kp LCTRL   &kp A  &kp S  &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L    &kp DQT   &none
 &kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &tog 1
-                          &kp SPACE  &kp LALT  &lt 8 ESC    &kp RET  &kp BSPC  &kp DEL
-            >;
-        };
-
-        EXTRA {
-            label = "Extra";
-            bindings = <
-&none              &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O           &kp P           &kp RG(RA(RC(T)))
-&kp CAPS           &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G          &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &kp LG(SPACE)
-&kp RG(BACKSLASH)  &u_lt 4 Z     &u_mt RALT X  &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH   &tog 1
-                                               &u_lt 7 ESC    &u_lt 5 SPACE  &u_lt 6 TAB    &u_lt 9 RET  &u_lt 8 BSPC   &u_lt 10 DEL
+                          &kp SPACE  &kp LALT  &lt 7 ESC    &kp RET  &kp BSPC  &kp DEL
             >;
         };
 
         TAP {
             label = "Tap";
             bindings = <
-&none              &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P      &kp RG(RA(RC(T)))
+&tmux_session      &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P      &kp RG(RA(RC(T)))
 &kp CAPS           &kp A  &kp S  &kp D    &kp F      &kp G      &kp H    &kp J     &kp K      &kp L    &kp SQT    &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp Z  &kp X  &kp C    &kp V      &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp SLASH  &tog 1
                                  &kp ESC  &kp SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
@@ -53,8 +43,8 @@
         BUTTON {
             label = "Button";
             bindings = <
-&none              &kp K_UNDO  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_AGAIN    &kp K_AGAIN  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp K_UNDO  &kp RG(RA(RC(T)))
-&kp CAPS           &kp LGUI    &kp LALT   &kp LCTRL  &kp LSHFT  &none          &none        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI    &kp LG(SPACE)
+&tmux_session      &kp K_UNDO  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_AGAIN    &kp K_AGAIN  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp K_UNDO  &kp RG(RA(RC(T)))
+&kp CAPS           &kp LCTRL   &kp LALT   &kp LCMD   &kp LSHFT  &none          &none        &kp LSHFT  &kp LCMD   &kp LALT   &kp LCTRL   &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp K_UNDO  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp K_AGAIN    &kp K_AGAIN  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp K_UNDO  &tog 1
                                           &mkp MB3   &mkp MB1   &mkp MB2       &mkp MB2     &mkp MB1   &mkp MB3
             >;
@@ -63,8 +53,8 @@
         NAV {
             label = "Nav";
             bindings = <
-&none              &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &kp K_AGAIN     &kp LS(INS)     &kp LC(INS)   &kp LS(DEL)      &kp K_UNDO  &kp RG(RA(RC(T)))
-&kp CAPS           &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word  &kp LG(SPACE)
+&tmux_session      &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &kp K_AGAIN     &kp LS(INS)     &kp LC(INS)   &kp LS(DEL)      &kp K_UNDO  &kp RG(RA(RC(T)))
+&kp CAPS           &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word  &kp LG(SPACE)
 &kp RG(BACKSLASH)  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INS     &tog 1
                                              &none          &none         &none    &kp RET         &kp BSPC        &kp DEL
             >;
@@ -73,8 +63,8 @@
         MOUSE {
             label = "Mouse";
             bindings = <
-&none              &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE   &none    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp RG(RA(RC(T)))
-&kp CAPS           &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT      &none    &none        &kp KP_N4    &kp KP_N2    &kp KP_N8    &kp KP_N6   &kp LG(SPACE)
+&tmux_session      &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE   &none    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp RG(RA(RC(T)))
+&kp CAPS           &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT      &none    &none        &kp KP_N4    &kp KP_N2    &kp KP_N8    &kp KP_N6   &kp LG(SPACE)
 &kp RG(BACKSLASH)  &none        &kp RALT     &u_to_U_SYM    &u_to_U_MOUSE  &none    &none        &none        &none        &none        &none       &tog 1
                                              &none          &none          &none    &mkp MB2     &mkp MB1     &mkp MB3
             >;
@@ -83,8 +73,8 @@
         MEDIA {
             label = "Media";
             bindings = <
-&none              &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE   &none    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI    &kp RG(RA(RC(T)))
-&kp CAPS           &kp LGUI     &kp LALT     &kp LCTRL      &kp LSHFT      &none    &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &ext_power EP_TOG  &kp LG(SPACE)
+&tmux_session      &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE   &none    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI    &kp RG(RA(RC(T)))
+&kp CAPS           &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT      &none    &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &ext_power EP_TOG  &kp LG(SPACE)
 &kp RG(BACKSLASH)  &none        &kp RALT     &u_to_U_FUN    &u_to_U_MEDIA  &none    &u_bt_sel_0      &u_bt_sel_1      &u_bt_sel_2      &u_bt_sel_3      &u_out_tog         &tog 1
                                              &none          &none          &none    &kp C_STOP       &kp C_PP         &kp C_MUTE
             >;
@@ -93,7 +83,7 @@
         NUM {
             label = "Num";
             bindings = <
-&none              &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
+&tmux_session      &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
 &kp CAPS           &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &u_to_U_NUM   &u_to_U_NAV    &kp RALT     &none        &tog 1
                                       &kp DOT  &kp N0  &kp MINUS    &none  &none         &none
@@ -103,8 +93,8 @@
         SYM {
             label = "Sym";
             bindings = <
-&none              &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
-&kp CAPS           &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &kp LG(SPACE)
+&tmux_session      &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
+&kp CAPS           &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &kp LSHFT     &kp LGUI       &kp LALT     &kp LCTRL    &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none  &u_to_U_SYM   &u_to_U_MOUSE  &kp RALT     &none        &tog 1
                                         &kp LPAR   &kp RPAR   &kp UNDER    &none  &none         &none
             >;
@@ -113,8 +103,8 @@
         FUN {
             label = "Fun";
             bindings = <
-&none              &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
-&kp CAPS           &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &kp LG(SPACE)
+&tmux_session      &kp F12  &kp F7  &kp F8     &kp F9     &kp PSCRN          &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
+&kp CAPS           &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &none  &kp LSHFT     &kp LGUI       &kp LALT     &kp LCTRL    &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &u_to_U_FUN   &u_to_U_MEDIA  &kp RALT     &none        &tog 1
                                     &kp K_APP  &kp SPACE  &kp TAB            &none  &none         &none
             >;
@@ -304,7 +294,7 @@
             label = "u_to_U_EXTRA";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 2>;
+            bindings = <&none>, <&to 0>;
         };
     };
 };
@@ -316,7 +306,7 @@
             label = "u_to_U_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to 2>;
         };
     };
 };
@@ -328,7 +318,7 @@
             label = "u_to_U_BUTTON";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 4>;
+            bindings = <&none>, <&to 3>;
         };
     };
 };
@@ -340,7 +330,7 @@
             label = "u_to_U_NAV";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 5>;
+            bindings = <&none>, <&to 4>;
         };
     };
 };
@@ -352,7 +342,7 @@
             label = "u_to_U_MOUSE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 6>;
+            bindings = <&none>, <&to 5>;
         };
     };
 };
@@ -364,7 +354,7 @@
             label = "u_to_U_MEDIA";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 7>;
+            bindings = <&none>, <&to 6>;
         };
     };
 };
@@ -376,7 +366,7 @@
             label = "u_to_U_NUM";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 8>;
+            bindings = <&none>, <&to 7>;
         };
     };
 };
@@ -388,7 +378,7 @@
             label = "u_to_U_SYM";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 9>;
+            bindings = <&none>, <&to 8>;
         };
     };
 };
@@ -400,7 +390,7 @@
             label = "u_to_U_FUN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 10>;
+            bindings = <&none>, <&to 9>;
         };
     };
 };
