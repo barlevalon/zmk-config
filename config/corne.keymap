@@ -84,7 +84,7 @@
             label = "Num";
             bindings = <
 &tmux_session      &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &u_to_U_BASE  &u_to_U_EXTRA  &u_to_U_TAP  &bootloader  &kp RG(RA(RC(T)))
-&kp CAPS           &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT     &kp LCTRL      &kp LALT     &kp LGUI     &kp LG(SPACE)
+&kp CAPS           &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT     &kp LGUI       &kp LALT     &kp LCTRL    &kp LG(SPACE)
 &kp RG(BACKSLASH)  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &u_to_U_NUM   &u_to_U_NAV    &kp RALT     &none        &tog 1
                                       &kp DOT  &kp N0  &kp MINUS    &none  &none         &none
             >;
