@@ -55,7 +55,7 @@
             bindings = <
 &tmux_session      &bootloader  &u_to_U_TAP  &u_to_U_EXTRA  &u_to_U_BASE  &none    &kp K_AGAIN     &kp LS(INS)     &kp LC(INS)   &kp LS(DEL)      &kp K_UNDO  &kp RG(RA(RC(T)))
 &kp CAPS           &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT     &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &caps_word  &kp LG(SPACE)
-&kp RG(BACKSLASH)  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INS     &tog 1
+&kp RG(BACKSLASH)  &none        &kp RALT     &u_to_U_NUM    &u_to_U_NAV   &none    &kp END         &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME         &kp INS     &tog 1
                                              &none          &none         &none    &kp RET         &kp BSPC        &kp DEL
             >;
         };
