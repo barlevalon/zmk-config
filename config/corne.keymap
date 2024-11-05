@@ -24,7 +24,7 @@
             label = "Game";
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &none
-&kp LCTRL   &kp A  &kp S  &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L    &kp DQT   &none
+&ctrl_cmd   &kp A  &kp S  &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L    &kp DQT   &none
 &kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &u_to_U_BASE
                           &kp SPACE  &kp LALT  &lt 7 ESC    &kp RET  &kp BSPC  &kp DEL
             >;
@@ -457,6 +457,15 @@
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
+        };
+
+        ctrl_cmd: ctrl_cmd {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_CMD";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp LCMD>;
+
+            tapping-term-ms = <200>;
         };
     };
 };
