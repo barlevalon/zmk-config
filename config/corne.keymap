@@ -17,15 +17,15 @@
 &tmux_session      &kp Q          &kp W         &kp E         &kp R          &kp T          &kp Y        &kp U          &kp I         &kp O           &kp P            &kp RG(RA(RC(T)))
 &kp CAPS           &u_mt LCTRL A  &u_mt LALT S  &u_mt LGUI D  &u_mt LSHFT F  &kp G          &kp H        &u_mt LSHFT J  &u_mt LGUI K  &u_mt LALT L    &u_mt LCTRL SQT  &kp LG(SPACE)
 &kp RG(BACKSLASH)  &u_lt 3 Z      &u_mt RALT X  &kp C         &kp V          &kp B          &kp N        &kp M          &kp COMMA     &u_mt RALT DOT  &u_lt 3 SLASH    &u_to_U_GAME
-                                                &u_lt 6 ESC   &u_lt 4 SPACE  &u_lt 5 TAB    &u_lt 8 RET  &u_lt 7 BSPC   &u_lt 9 DEL
+                                                &u_lt 6 ESC   &u_lt 4 SPACE  &u_lt 9 TAB    &u_lt 8 RET  &u_lt 7 BSPC   &u_lt 9 DEL
             >;
         };
 
         GAME {
             label = "Game";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &none
-&ctrl_cmd   &kp A  &kp S  &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L    &kp DQT   &none
+&kp TAB     &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &kp F12
+&kp LCTRL   &kp A  &kp S  &kp D      &kp F     &kp G        &kp H    &kp J     &kp K      &kp L    &kp SQT   &none
 &kp LSHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &u_to_U_BASE
                           &kp SPACE  &kp LALT  &lt 7 ESC    &kp RET  &kp BSPC  &kp DEL
             >;
